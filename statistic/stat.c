@@ -18,6 +18,7 @@ int main() {
     for (int i = 0; i < number; i++) {
         if (scanf("%d", &data[i]) != 1) {
             printf("\nВведены некорректные данные\n");
+            free(data);
             return 1;
         }
     }
